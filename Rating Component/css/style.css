@@ -45,19 +45,22 @@ p{
     line-height: 1.8;
 }
 
+.main-container,
 .thanks {
-    background-color: var(--dark-blue);
-    padding: 1.5rem;
-    border-radius: 0.625;
-    max-width: 400px;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(212, 18%, 14%),
+    hsl(220, 16%, 11%)
+  );
+  max-width: 400px;
+  padding: 2rem 1.5rem;
+  border-radius: 1.8rem;
 }
 
-.main-container {
-    background-color: var(--dark-blue);
-    padding: 1.5rem;
-    border-radius: 0.625rem;
-    max-width: 400px;
-    
+.main-container img {
+    background-color: hsl(213, 19%, 22%);
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
 
@@ -66,7 +69,6 @@ p{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
 }
 
 .main-container ul li button {
@@ -89,17 +91,31 @@ p{
     background-color: var(--light-grey);
 }
 
+.btn {
+    background-color: hsl(213, 19%, 18%);
+    width: 3rem;
+    height: 3rem;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding-top: 0.3rem;
+    transition: 0.3s;
+  }
+  
+
 .btn-submit {
-    background-color: var(--orange);
-    color: var(--white);
+    background-color: hsl(25, 97%, 53%);
+    padding: 0.625rem 2rem 0.5rem;
     width: 100%;
-    padding: 0.8rem 0 0.6rem;
-    border: 0;
+    border: none;
     border-radius: 30px;
+    color: #fff;
+    margin-top: 2rem;
+    transition: 0.3s;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
-    transition: 0.3;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
 }
 
 .btn-submit:hover {
@@ -107,11 +123,7 @@ p{
     color: var(--orange);
 }
 
-.main-container img {
-    background-color: hsl(213, 19%, 22%);
-    padding: 0.5rem;
-    border-radius: 50%;
-}
+
 
 .main-container h1 {
     color: var(--white);
