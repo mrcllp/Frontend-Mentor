@@ -49,12 +49,14 @@ p{
     background-color: var(--dark-blue);
     padding: 1.5rem;
     border-radius: 0.625;
+    max-width: 400px;
 }
 
 .main-container {
     background-color: var(--dark-blue);
     padding: 1.5rem;
     border-radius: 0.625rem;
+    max-width: 400px;
     
 }
 
