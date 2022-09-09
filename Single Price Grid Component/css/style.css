@@ -3,7 +3,7 @@
 /* - Light Gray: hsl(204, 43%, 93%)
 - Grayish Blue: hsl(218, 22%, 67%) */
 
-* {
+* { 
     box-sizing: border-box;
 }
 
@@ -23,7 +23,8 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0,5);
-    max-width: 900px;
+    width: 800;
+    max-width: 800px;
     margin: auto;
     overflow: hidden;
 }
@@ -32,12 +33,12 @@ section {
     padding: 35px;
 }
 
-section.cyan {
+.cyan {
     background-color: hsl(179, 62%, 43%);
     color: white;
 }
 
-section.cyanish {
+.cyanish {
     background-color: hsl(179, 44%, 51%);
     color: white;
 }
@@ -52,7 +53,7 @@ section.cyanish {
 
 h1 {
     color: hsl(179, 62%, 43%);
-    font-size: 38px;
+    font-size: 35px;
 }
 
 .byellow-text {
@@ -111,3 +112,8 @@ ul li {
     line-height: 28px;
 }
 
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
