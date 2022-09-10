@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Karla:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@700&family=Open+Sans:wght@300&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    max-width: 650px;
+    text-align: center;
+    margin: 60px auto ;
+
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 50px;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 10px;
+}
+
+h1 span {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+h2 {
+    font-weight: 300;
+    color:   hsl(209, 33%, 12%)
+}
+
+form {
+    margin-top: 50px;
+}
+
+input {
+    border: 1px solid hsl(223, 100%, 88%);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 20px 25px;
+    width: 400px;
+    max-width: 100%;
+}
+
+input::placeholder {
+    color: hsl(223, 100%, 88%);
+ }
+
+button {
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px hsl(223, 100%, 88%);
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 60px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.illustration {
+    max-width: 100%;
+    margin: 60px 0;
+}
+
+
+.sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.sm li {
+    margin: 10px;
+}
+
+.sm li a {
+    border: 1px solid hsl(0, 7%, 89%);
+    border-radius: 50%;
+    color:  hsl(223, 87%, 63%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+
+.sm li a:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    border-color: hsl(223, 87%, 63%);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+footer p {
+    color: hsl(0, 0%, 50%);
+}
