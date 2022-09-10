@@ -2,7 +2,8 @@ const projects = [
     'advice-generator-app-main',
     'NFT Preview Card',
     'Rating Component',
-    'Single Price Grid Component'
+    'Single Price Grid Component',
+	'ping-coming-soon-page-master'
 ];
 
 
