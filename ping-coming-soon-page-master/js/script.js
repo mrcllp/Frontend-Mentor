@@ -21,7 +21,7 @@ form.addEventListener('submit', e => {
         email.classList.remove('error');
         small.innerText = '';
         small.style.display = 'none'
-    }
+    } 
 });
 
 function isValidEmail(email) {
