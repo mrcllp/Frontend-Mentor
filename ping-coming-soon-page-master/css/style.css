@@ -37,6 +37,7 @@ h2 {
 
 form {
     margin-top: 50px;
+    text-align: left;
 }
 
 input {
@@ -69,6 +70,13 @@ button {
 
 button:hover {
     opacity: 0.9;
+}
+
+form small {
+    color: hsl(354, 100%, 66%);
+    display: inline-block;
+    font-style: italic;
+    margin: 10px 16px;
 }
 
 .illustration {
@@ -115,3 +123,4 @@ button:hover {
 footer p {
     color: hsl(0, 0%, 50%);
 }
+
