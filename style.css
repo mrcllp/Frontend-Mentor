@@ -18,9 +18,7 @@ body {
 
 h1 {
 	text-align: center;
-    background: -webkit-linear-gradient(#0761d1ff, #ea558dff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ba87fc;
 }
 
 h2 {
