@@ -5,14 +5,22 @@ form.addEventListener('submit', e => {
     e.preventDefault();
 
     // Emal validation check
-    const emailValue = form['email'].value;
+    const email = form['email'];
+    const emailValue = email.value;
+    const small = form.querySelector('small');
 
     if(!emailValue) {
-
+        email.classList.add('error');
+        small.innerText = 'Please provide a valid email address';
+        small.style.display = 'inline-block';
     } else if(!validEmail(emailValue)) {
-
+        email.classList.add('error');
+        small.innerText = 'Email invalid';
+        small.style.display = 'inline-block'
     } else {
-
+        email.classList.remove('error');
+        small.innerText = '';
+        small.style.display = 'none'
     }
 });
 
