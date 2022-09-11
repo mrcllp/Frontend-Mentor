@@ -175,5 +175,21 @@ button {
 .blueish {
     background-color: hsl(238, 22%, 44%);
     color: white;
-    padding: 30px 0;
+    padding: 50px 0;
+}
+
+.blueish form {
+    flex-direction: column;
+}
+
+.blueish form input {
+    flex: 1; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+
+.blueish form button {
+    width: 50%;
+    margin: 20px 0;
 }
