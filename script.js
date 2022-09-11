@@ -3,7 +3,8 @@ const projects = [
     'NFT Preview Card',
     'Rating Component',
     'Single Price Grid Component',
-	'ping-coming-soon-page-master'
+	'ping-coming-soon-page-master',
+	'fylo-landing-page'
 ];
 
 
