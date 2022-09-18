@@ -45,8 +45,14 @@
         </button>
       </main>
 
-      <button class="btn-rules">Rules</button>
+      <div class="rules-modal" id="modal">
+        <img src="./images/image-rules.svg" alt="rules" />
+        <button id="close"><img src="./images/icon-close.svg" alt="close" /></button>
+      </div>
+
+      <button class="btn-rules" id="open">Rules</button>
     </div>
+
     <div class="picks" id="picks">
       <div>
         <h2>You Picked</h2>
@@ -56,7 +62,7 @@
           </span>
         </button>
       </div>
-      <div>
+      <div class="mobileish">
         <p class="result"><span id="winner">Win</span></p>
         <button class="btn-reset" id="reset">Play Again</button>
       </div>

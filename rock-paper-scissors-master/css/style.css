@@ -87,7 +87,7 @@ h4 {
   cursor: pointer;
 }
 
-.btn-icons:active {
+button:active {
   transform: scale(0.9);
 }
 
@@ -162,13 +162,12 @@ main::before {
 
 .picks {
   display: none;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
-  width: 800px;
-  max-width: 100%;
-  margin: 40px;
-  text-transform: uppercase;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .picks .btn-icons {
@@ -176,9 +175,40 @@ main::before {
   transform: scale(1.2);
 }
 
+.picks,
+#winner h2 span {
+  text-align: center;
+}
+
 .result {
   text-transform: uppercase;
   font-size: 3rem;
   line-height: 0.8;
   margin: 0 0 20px;
+}
+
+.rules-modal {
+  background-color: hsl(217, 53%, 88%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.rules-modal button {
+  border: none;
+  background-color: transparent;
+  margin-top: 100px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+#open {
+  cursor: pointer;
 }

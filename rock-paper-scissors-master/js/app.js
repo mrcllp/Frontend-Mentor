@@ -8,6 +8,11 @@ const userPick = document.getElementById("player_pick");
 const compPick = document.getElementById("computer_pick");
 const winner = document.getElementById("winner");
 
+// Modal buttons
+const openBtn = document.getElementById("open");
+const closeBtn = document.getElementById("close");
+const modal = document.getElementById("modal");
+
 let score = 0;
 let userChoice = undefined;
 
@@ -22,6 +27,14 @@ buttons.forEach((button) => {
 reset.addEventListener("click", () => {
   main.style.display = "flex";
   picks.style.display = "none";
+});
+
+openBtn.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
 });
 
 function checkWinner() {
