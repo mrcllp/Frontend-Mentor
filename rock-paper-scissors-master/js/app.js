@@ -32,7 +32,7 @@ function checkWinner() {
 
   if (userChoice === computerChoice) {
     //draw
-    winner.inntertext = "draw";
+    winner.innerText = "Draw";
   } else if (
     (userChoice === "paper" && computerChoice === "rock") ||
     (userChoice === "rock" && computerChoice === "scissors") ||
@@ -62,11 +62,11 @@ function pickRandom() {
 }
 
 function updatePick(pickEl, choice) {
-    //reset
+  //reset
   pickEl.classList.remove("btn-paper");
   pickEl.classList.remove("btn-rock");
   pickEl.classList.remove("btn-scissors");
-    // update img
+  // update img
   const img = pickEl.querySelector("img");
   pickEl.classList.add(`btn-${choice}`);
   img.src = `./images/icon-${choice}.svg`;
