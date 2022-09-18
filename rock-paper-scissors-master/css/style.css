@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Bilbo&family=Karla:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,500&family=Open+Sans:wght@300;400&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@300;400;600;700&family=Press+Start+2P&family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;1,300;1,400&family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(
+    circle at 50% 10%,
+    hsl(214, 47%, 23%),
+    hsl(231, 49%, 15%)
+  );
+  color: #fff;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+  max-width: 100%;
+}
+
+header {
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 50px 0;
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 0.8;
+}
+
+h4 {
+  color: hsl(229, 64%, 46%);
+  margin: 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.score-container {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+.score-container p {
+  color: hsl(229, 25%, 31%);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.btn-rules {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  letter-spacing: 2px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  color: #fff;
+  font-family: inherit;
+  padding: 10px 25px;
+}
+
+.btn-icons {
+  border-radius: 50%;
+  box-shadow: inset 0 -5px rgba(0, 0, 0, 0.15);
+  border: none;
+  height: 150px;
+  width: 150px;
+}
+
+.btn-paper {
+  background: linear-gradient(
+    to bottom,
+    hsl(230, 89%, 62%),
+    hsl(230, 89%, 65%)
+  );
+}
+
+.btn-scissors {
+  background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.btn-rock {
+  background: linear-gradient(
+    to bottom,
+    hsl(349, 71%, 52%),
+    hsl(349, 70%, 56%)
+  );
+}
+
+.btn-icons .wrapper {
+  width: 120px;
+  height: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  background-color: #fff;
+}
