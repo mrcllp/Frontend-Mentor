@@ -83,6 +83,21 @@ h4 {
   border: none;
   height: 150px;
   width: 150px;
+  margin: 0 25px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+main::after {
+    
 }
 
 .btn-paper {
